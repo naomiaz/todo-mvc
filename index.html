@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -8,47 +8,35 @@
 </head>
 
 <body>
+  <h1>todo mvc</h1>
+  <div class="container">
 
-  <head>
-    <title>Practical Todos</title>
-    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon.ico" type="image/x-icon">
-  </head>
+  <div>
+    <button onclick="handlers.addTodo()" class="add">Add</button>
+    <input id="addTodoTextInput" type="text" autofocus>
+  </div>
 
+  <div>
+    <button onclick="handlers.changeTodo()">Change Todo</button>
+    <input id="changeTodoPositionInput" type="number" min="0" placeholder="index">
+    <input id="changeTodoTextInput" type="text">
+  </div>
 
-  <body>
-    <h1>todo mvc</h1>
-    <div class="container">
+  <div>
+    <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+    <input id="toggleCompletedPositionInput" type="number" min="0" placeholder="index">
+  </div>
 
-    <div>
-      <button onclick="handlers.addTodo()" class="add">Add</button>
-      <input id="addTodoTextInput" type="text" autofocus>
-    </div>
+  <div>
+    <button onclick="handlers.toggleAll()">Toggle All</button>
+  </div>
 
-    <div>
-      <button onclick="handlers.changeTodo()">Change Todo</button>
-      <input id="changeTodoPositionInput" type="number" min="0" placeholder="index">
-      <input id="changeTodoTextInput" type="text">
-    </div>
+  <ul>
+  </ul>
+  </div>
 
-    <div>
-      <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
-      <input id="toggleCompletedPositionInput" type="number" min="0" placeholder="index">
-    </div>
-
-    <div>
-      <button onclick="handlers.toggleAll()">Toggle All</button>
-    </div>
-
-    <ul>
-    </ul>
-    </div>
-
-    <footer>Inspired by <a href="http://todomvc.com/examples/vanilla-es6/">todomvc</a></footer>
-    <script src="js/index.js"></script>
-  </body>
-
-<script  src="js/index.js"></script>
-
+  <footer>Inspired by <a href="http://todomvc.com/examples/vanilla-es6/">todomvc</a></footer>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
